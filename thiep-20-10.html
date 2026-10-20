@@ -1161,17 +1161,19 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visib
   border-radius: 24px;
   pointer-events: none;
 }
-.greeting-card::after {
-  content: "";
+.greeting-mascot {
   position: absolute;
-  right: 28px;
-  bottom: 30px;
-  width: 54px;
-  height: 54px;
+  right: 24px;
+  bottom: 22px;
+  width: 66px;
+  height: 66px;
+  padding: 5px;
   border: 1px solid rgba(168, 91, 114, 0.18);
   border-radius: 50%;
+  background: rgba(255, 253, 249, 0.92);
   box-shadow: 0 0 0 7px rgba(183, 138, 75, 0.035), inset 0 0 0 7px rgba(183, 138, 75, 0.035);
   pointer-events: none;
+  z-index: 1;
 }
 .greeting-eyebrow {
   display: flex;
@@ -1213,6 +1215,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visib
   z-index: 1;
   margin-top: auto;
   padding-top: 18px;
+  padding-right: 80px;
   border-top: 1px solid var(--line);
 }
 .signature-to {
@@ -1415,7 +1418,8 @@ noscript .no-js {
   .result-flower-meta { font-size: 8px; }
   .greeting-card { padding: 33px 23px 30px; }
   .greeting-card::before { inset: 9px; border-radius: 18px; }
-  .greeting-card::after { right: 18px; bottom: 16px; width: 40px; height: 40px; }
+  .greeting-mascot { right: 15px; bottom: 13px; width: 54px; height: 54px; padding: 4px; }
+  .signature { padding-right: 62px; }
   .greeting-eyebrow { font-size: 8px; gap: 7px; }
   .greeting-eyebrow .line { width: 17px; }
   .greeting-title { margin-top: 12px; font-size: clamp(45px, 13.5vw, 61px); }
@@ -1608,32 +1612,48 @@ noscript .no-js {
       <path d="M38 82c-6 1-11 5-14 11M62 82c6 1 11 5 14 11"/>
     </g>
   </symbol>
-  <symbol id="fl-baby" viewBox="0 0 100 100">
-    <g stroke="#829a7d" stroke-width="1.15" stroke-linecap="round" fill="none">
-      <path d="M50 91c-2-15-3-28-2-39M48 67 33 54M49 72l15-13M47 78 36 75M52 78l11-5M49 58V43M44 61 35 49M55 63l9-11"/>
+  <symbol id="fl-lisianthus" viewBox="0 0 100 100">
+    <g fill="var(--f-petal,#82abeb)" stroke="var(--f-deep,#476fbc)" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="rotate(0 50 50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="rotate(72 50 50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="rotate(144 50 50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="rotate(216 50 50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="rotate(288 50 50)"/>
     </g>
-    <g fill="var(--f-petal,#fffdf4)" stroke="var(--f-deep,#e8dcc5)" stroke-width=".6">
-      <g transform="translate(49 39)">
-        <circle cx="0" cy="-5" r="3.1"/><circle cx="4.8" cy="-1.5" r="3.1"/><circle cx="3" cy="4.3" r="3.1"/><circle cx="-3" cy="4.3" r="3.1"/><circle cx="-4.8" cy="-1.5" r="3.1"/>
-      </g>
-      <g transform="translate(33 49) scale(.86)">
-        <circle cx="0" cy="-5" r="3.1"/><circle cx="4.8" cy="-1.5" r="3.1"/><circle cx="3" cy="4.3" r="3.1"/><circle cx="-3" cy="4.3" r="3.1"/><circle cx="-4.8" cy="-1.5" r="3.1"/>
-      </g>
-      <g transform="translate(64 50) scale(.9)">
-        <circle cx="0" cy="-5" r="3.1"/><circle cx="4.8" cy="-1.5" r="3.1"/><circle cx="3" cy="4.3" r="3.1"/><circle cx="-3" cy="4.3" r="3.1"/><circle cx="-4.8" cy="-1.5" r="3.1"/>
-      </g>
-      <g transform="translate(37 64) scale(.72)">
-        <circle cx="0" cy="-5" r="3.1"/><circle cx="4.8" cy="-1.5" r="3.1"/><circle cx="3" cy="4.3" r="3.1"/><circle cx="-3" cy="4.3" r="3.1"/><circle cx="-4.8" cy="-1.5" r="3.1"/>
-      </g>
-      <g transform="translate(61 66) scale(.76)">
-        <circle cx="0" cy="-5" r="3.1"/><circle cx="4.8" cy="-1.5" r="3.1"/><circle cx="3" cy="4.3" r="3.1"/><circle cx="-3" cy="4.3" r="3.1"/><circle cx="-4.8" cy="-1.5" r="3.1"/>
-      </g>
-      <g transform="translate(50 55) scale(.68)">
-        <circle cx="0" cy="-5" r="3.1"/><circle cx="4.8" cy="-1.5" r="3.1"/><circle cx="3" cy="4.3" r="3.1"/><circle cx="-3" cy="4.3" r="3.1"/><circle cx="-4.8" cy="-1.5" r="3.1"/>
-      </g>
+    <g fill="var(--f-deep,#476fbc)" opacity=".16" stroke="none">
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="translate(50 50) rotate(36) scale(.64) translate(-50 -50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="translate(50 50) rotate(108) scale(.64) translate(-50 -50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="translate(50 50) rotate(180) scale(.64) translate(-50 -50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="translate(50 50) rotate(252) scale(.64) translate(-50 -50)"/>
+      <path d="M50 49C41 46 31 38 31 27 31 17 38 10 45 13 47 14 49 17 50 20 51 17 53 14 55 13 62 10 69 17 69 27 69 38 59 46 50 49Z" transform="translate(50 50) rotate(324) scale(.64) translate(-50 -50)"/>
     </g>
-    <g fill="var(--f-center,#c9a55e)">
-      <circle cx="49" cy="39" r="1.5"/><circle cx="33" cy="49" r="1.3"/><circle cx="64" cy="50" r="1.3"/><circle cx="37" cy="64" r="1.1"/><circle cx="61" cy="66" r="1.1"/><circle cx="50" cy="55" r="1.1"/>
+    <g fill="none" stroke="var(--f-deep,#476fbc)" stroke-width=".9" opacity=".3">
+      <path d="M50 45C48 34 48 23 50 13" transform="rotate(0 50 50)"/>
+      <path d="M50 45C48 34 48 23 50 13" transform="rotate(72 50 50)"/>
+      <path d="M50 45C48 34 48 23 50 13" transform="rotate(144 50 50)"/>
+      <path d="M50 45C48 34 48 23 50 13" transform="rotate(216 50 50)"/>
+      <path d="M50 45C48 34 48 23 50 13" transform="rotate(288 50 50)"/>
+    </g>
+    <circle cx="50" cy="50" r="8" fill="var(--f-center,#e7c36e)" stroke="var(--f-deep,#476fbc)" stroke-width="1.1"/>
+    <circle cx="50" cy="50" r="4.2" fill="#6b5527" opacity=".18"/>
+    <g fill="var(--f-deep,#476fbc)" opacity=".5">
+      <circle cx="50" cy="43.6" r="1.1"/><circle cx="56.1" cy="46.4" r="1.1"/><circle cx="54.7" cy="53.4" r="1.1"/><circle cx="45.3" cy="53.4" r="1.1"/><circle cx="43.9" cy="46.4" r="1.1"/>
+    </g>
+  </symbol>
+  <symbol id="deco-cinnamoroll" viewBox="0 0 100 100">
+    <path d="M50 13C63 13 72.5 18 77.5 26 81.5 32.5 84.5 40 87.5 49 90.5 58 92 69 89 77.5 86 85.5 78 88.5 71 84.5 68 81.5 66 76 64 70 60 72.5 55 73.5 50 73.5 45 73.5 40 72.5 36 70 34 76 32 81.5 29 84.5 22 88.5 14 85.5 11 77.5 8 69 9.5 58 12.5 49 15.5 40 18.5 32.5 22.5 26 27.5 18 37 13 50 13Z" fill="#FFFFFF" stroke="#55C2EF" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <g fill="#F8CCD9" opacity=".9">
+      <ellipse cx="29.5" cy="57.5" rx="7" ry="4.4"/>
+      <ellipse cx="70.5" cy="57.5" rx="7" ry="4.4"/>
+    </g>
+    <g fill="#55C2EF">
+      <ellipse cx="34.5" cy="45.5" rx="3.6" ry="6.3"/>
+      <ellipse cx="65.5" cy="45.5" rx="3.6" ry="6.3"/>
+    </g>
+    <path d="M39.5 56C39.7 60.4 42.3 63 45 61.6 47.8 60.2 48.2 57.4 50 57.4 51.8 57.4 52.2 60.2 55 61.6 57.7 63 60.3 60.4 60.5 56" fill="none" stroke="#55C2EF" stroke-width="2.9" stroke-linecap="round"/>
+    <g fill="none" stroke="#55C2EF" stroke-width="2.6" stroke-linecap="round">
+      <path d="M30 26.5C24.8 33.5 22.8 44 24.2 54.5 25 60.5 28 66 34.5 69.5"/>
+      <path d="M70 26.5C75.2 33.5 77.2 44 75.8 54.5 75 60.5 72 66 65.5 69.5"/>
     </g>
   </symbol>
 
@@ -1711,7 +1731,7 @@ const CONFIG = {
     { id: "lily", name: "Hoa ly", note: "Thanh tao", colors: { petal: "#FAE6D3", deep: "#D8A877", center: "#A37C4F" } },
     { id: "peony", name: "Hoa mẫu đơn", note: "Viên mãn", colors: { petal: "#F7C1D1", deep: "#DD8AA6", center: "#B65A79" } },
     { id: "lavender", name: "Oải hương", note: "Bình yên", colors: { petal: "#A995D6", deep: "#7864AE", center: "#55437B" } },
-    { id: "baby", name: "Hoa baby", note: "Mỏng manh", colors: { petal: "#FFFDF4", deep: "#E8DCC5", center: "#C9A55E" } }
+    { id: "lisianthus", name: "Hoa cát tường", note: "May mắn", colors: { petal: "#82ABEB", deep: "#476FBC", center: "#E7C36E" } }
   ],
   wraps: [
     { id: "cream", name: "Kem trắng", paper: "#FDF7EF", paperDark: "#F3E4D1", line: "#C8AC85" },
@@ -1723,7 +1743,8 @@ const CONFIG = {
     { id: "wine", name: "Đỏ rượu", color: "#9C2F4F", deep: "#73203C" },
     { id: "peach", name: "Hồng đào", color: "#E08CA3", deep: "#B9617A" },
     { id: "gold", name: "Vàng đồng", color: "#C29A5B", deep: "#997134" },
-    { id: "ivory", name: "Trắng ngà", color: "#F1E6D6", deep: "#C9B89E" }
+    { id: "ivory", name: "Trắng ngà", color: "#F1E6D6", deep: "#C9B89E" },
+    { id: "sky", name: "Thiên thanh", color: "#8AC2EC", deep: "#5A8FBE" }
   ],
   defaults: {
     wrap: "cream",
@@ -1917,6 +1938,7 @@ const CONFIG = {
           <p class="signature-to" id="resultRecipient"></p>
           <p class="signature-from" id="resultSender"></p>
         </div>
+        <svg class="greeting-mascot" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#deco-cinnamoroll"></use></svg>
       </article>
     </div>
     <div class="result-actions" role="group" aria-label="Chia sẻ và lưu thiệp">
@@ -2939,6 +2961,40 @@ const CONFIG = {
     context.restore();
   }
 
+  function drawCinnamorollFace(context, centerX, centerY, size) {
+    const scale = size / 100;
+    context.save();
+    context.translate(centerX - size / 2, centerY - size / 2);
+    context.scale(scale, scale);
+    context.lineJoin = "round";
+    context.lineCap = "round";
+    const head = new Path2D("M50 13C63 13 72.5 18 77.5 26 81.5 32.5 84.5 40 87.5 49 90.5 58 92 69 89 77.5 86 85.5 78 88.5 71 84.5 68 81.5 66 76 64 70 60 72.5 55 73.5 50 73.5 45 73.5 40 72.5 36 70 34 76 32 81.5 29 84.5 22 88.5 14 85.5 11 77.5 8 69 9.5 58 12.5 49 15.5 40 18.5 32.5 22.5 26 27.5 18 37 13 50 13Z");
+    context.fillStyle = "#ffffff";
+    context.fill(head);
+    context.strokeStyle = "#55C2EF";
+    context.lineWidth = 3.4;
+    context.stroke(head);
+    context.globalAlpha = 0.9;
+    context.fillStyle = "#F8CCD9";
+    context.beginPath();
+    context.ellipse(29.5, 57.5, 7, 4.4, 0, 0, Math.PI * 2);
+    context.ellipse(70.5, 57.5, 7, 4.4, 0, 0, Math.PI * 2);
+    context.fill();
+    context.globalAlpha = 1;
+    context.fillStyle = "#55C2EF";
+    context.beginPath();
+    context.ellipse(34.5, 45.5, 3.6, 6.3, 0, 0, Math.PI * 2);
+    context.ellipse(65.5, 45.5, 3.6, 6.3, 0, 0, Math.PI * 2);
+    context.fill();
+    context.strokeStyle = "#55C2EF";
+    context.lineWidth = 2.9;
+    context.stroke(new Path2D("M39.5 56C39.7 60.4 42.3 63 45 61.6 47.8 60.2 48.2 57.4 50 57.4 51.8 57.4 52.2 60.2 55 61.6 57.7 63 60.3 60.4 60.5 56"));
+    context.lineWidth = 2.6;
+    context.stroke(new Path2D("M30 26.5C24.8 33.5 22.8 44 24.2 54.5 25 60.5 28 66 34.5 69.5"));
+    context.stroke(new Path2D("M70 26.5C75.2 33.5 77.2 44 75.8 54.5 75 60.5 72 66 65.5 69.5"));
+    context.restore();
+  }
+
   async function createExportCanvas() {
     await waitForFonts();
     const W = 1200;
@@ -3121,6 +3177,24 @@ const CONFIG = {
     ctx.textAlign = "left";
     ctx.fillText("20 · 10", W / 2 + 126, 1501 + extraHeight);
     ctx.textAlign = "center";
+
+    const mascotX = cardX + cardW - 80;
+    const mascotY = cardY + cardH - 98;
+    ctx.save();
+    ctx.fillStyle = "#fffdf9";
+    ctx.strokeStyle = "rgba(208,159,174,.8)";
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(mascotX, mascotY, 45, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    ctx.strokeStyle = "rgba(183,138,75,.22)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(mascotX, mascotY, 37, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.restore();
+    drawCinnamorollFace(ctx, mascotX, mascotY, 60);
 
     return canvas;
   }
@@ -3317,7 +3391,7 @@ const CONFIG = {
       const slot = slots[layout[index]];
       const centerX = slot.x;
       const centerY = slot.y;
-      const size = ({ rose: 84, tulip: 78, daisy: 70, sunflower: 82, lily: 80, peony: 90, lavender: 68, baby: 74 }[flower.id] || 76) * sizeScale * slot.scale;
+      const size = ({ rose: 84, tulip: 78, daisy: 70, sunflower: 82, lily: 80, peony: 90, lavender: 68, lisianthus: 86 }[flower.id] || 76) * sizeScale * slot.scale;
       const dx = centerX - 210;
       const joinY = centerY + size * 0.2;
       const stemPath = "M" + (210 + dx * 0.06).toFixed(1) + " " + (baseY - 8).toFixed(1) +
